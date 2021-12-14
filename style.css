@@ -1,0 +1,16 @@
+body {
+    margin: 10px auto;
+    min-width: 250px;
+    max-width: 50%;
+    background-color: beige;
+  }
+
+  input {
+    margin: 0;
+    border: none;
+    border-radius: 0;
+    width: 100%;
+    padding: 10px;
+    float: left;
+    font-size: 16px;
+  }
