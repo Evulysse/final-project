@@ -2,21 +2,22 @@
 <html>
   <head>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="main.js" defer></script>
   </head>
   <body>
     <div class="header">
       <h1 >Travel Planner</h1>
       <input type="text" id="myInput" placeholder="Add to your travel plans... ">
-	  <input type="submit" id="add" onclick="addNewPlans()"  value="ADD NEW PLANS"  style="background-color:aqua; color:black" />
+	  <input type="submit" id="addItem" onclick="addNewPlans()"  value="ADD NEW PLANS"  style="background-color:aqua; color:black" />
 	    <input type="submit" onclick="editPlans()" value="EDIT PLANS" style="background-color:antiquewhite; color:turquoise"/>
 	  <input type="submit" onclick="removeAllPlans()" value="REMOVE ALL PLANS" style="background-color:aqua;  color:black" />
     </div>
 	<div>
-	 <h3 style="color:teal " >Here are your plans</h3>
+	 <h3 style="color:white " >Here are your plans</h3>
 	 <ul id="myUL">
     </ul>
 	</div>
 	
-    <script type="text/javascript" src="main.js"></script>
+    
   </body>
 </html>
