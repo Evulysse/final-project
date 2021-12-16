@@ -1,5 +1,7 @@
 * {
   box-sizing: border-box;
+  margin: 5px;
+  padding: 5px;
 }
 body {
     margin: 10px auto;
@@ -34,7 +36,7 @@ ul li:hover {
   ul li.checked {
     background: teal;
     color: white;
-    text-decoration: line-through;
+    
   }
   ul li.checked::before {
     content: '';
@@ -64,11 +66,16 @@ ul li:hover {
   }
   input {
     margin: 0;
-    /* border: none; */
+    border: none;
     border-radius: 0;
     width: 100%;
     padding: 10px;
     float: left;
     font-size: 16px;
   }
-  
+  .links {
+    display: flex;
+    font-style: oblique;
+    margin: 5px;
+    padding: 5px;
+    }

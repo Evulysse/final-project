@@ -1,13 +1,24 @@
 <!DOCTYPE html>
-<html>
-  <head>
+  <html lang="en">
+    <head>
+      <title>Travel planner</title>
+      <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="main.js" defer></script>
   </head>
+
   <body>
-    <div class="header">
-      <h1 >Travel Planner</h1>
-      <input type="text" id="myInput" placeholder="Add to your travel plans... ">
+    <div>
+      <label>Date</label>
+      <input id= "travelDate" type= "date"/>
+    </div>
+    <div>
+      <label>Destination</label>
+      <input id= "destination" />
+    </div>
+ <div class="header">
+      <h1 >Your trave destination awaits</h1>
+      <input type="text" id="myInput" placeholder="Your travel plans... ">
 	  <input type="submit" id="addItem" onclick="addNewPlans()"  value="ADD NEW PLANS"  style="background-color:aqua; color:black" />
 	    <input type="submit" onclick="editPlans()" value="EDIT PLANS" style="background-color:antiquewhite; color:turquoise"/>
 	  <input type="submit" onclick="removeAllPlans()" value="REMOVE ALL PLANS" style="background-color:aqua;  color:black" />
@@ -17,7 +28,15 @@
 	 <ul id="myUL">
     </ul>
 	</div>
-	
+	<div class="links">
+            
+    <ul>
+  <li> <a href="https://populi.co/legal/terms">Terms of Service </a></li> 
+ <li> <a href= https://populi.co/legal/aup>Acceptable Use Policy</a> </li>
+ <li> <a href=https://dfa.populiweb.com/internal/go_to_zendesk.php?pageNav=1 >Support</a></li>
+ <li> <a href=https://www.facebook.com/populico> Facebook</a></li>
+    </ul>
+</div>
     
   </body>
 </html>
