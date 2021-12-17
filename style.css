@@ -1,81 +1,83 @@
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
-  margin: 5px;
-  padding: 5px;
 }
-body {
-    margin: 10px auto;
-    min-width: 250px;
-    max-width: 100%;
-    background-color: teal;
-    display: flex;
-    flex-direction:column ;
-    justify-content: center;
-    align-items: center;
+
+a {
+  text-decoration-color: bisque;
 }
+
+header, main, footer {
+  padding: 20px;
+}
+
 ul {
-    margin: 0;
-    padding: 0;
+  list-style: none;
 }
-ul li {
-    cursor: pointer;
-    position: relative;
-    padding: 12px 8px 12px 40px;
-    list-style-type: none;
-    background: #eee;
-    font-size: 18px;
-    transition: 0.2s;
-    
+
+#header {
+  display: flex;
+  justify-content: space-around;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_rwsxQCjLOEtlEQyt7MeIs9-Zbf32soV8Sg&usqp=CAU");
 }
-ul li:nth-child(odd) {
-  background: #f9f9f9;
-}
-ul li:hover {
-    background: #ddd;
-}
-  ul li.checked {
-    background: teal;
-    color: white;
-    
-  }
-  ul li.checked::before {
-    content: '';
-    position: absolute;
-    border-color: #fff;
-    border-style: solid;
-    border-width: 0 2px 2px 0;
-    top: 10px;
-    left: 16px;
-    transform: rotate(45deg);
-    height: 15px;
-    width: 7px;
-  }
+
+#footer {
+  position:fixed;
+  width: 100%;
+  bottom: 0;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_rwsxQCjLOEtlEQyt7MeIs9-Zbf32soV8Sg&usqp=CAU");
+}  
   
-  
-  .header {
-    background-image: url("https://media.istockphoto.com/photos/aerial-view-of-the-fishing-boats-on-tropical-sea-coast-with-sandy-at-picture-id1136453251?k=20&m=1136453251&s=612x612&w=0&h=pVs46LQDBpfbqL18B1Bf7PqUM8bfLiVmC9idIO6BxVA=");
-    background-color: black;
-    padding: 30px 40px;
-    color: white;
-    text-align: center;
-  }
-  .header:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  input {
-    margin: 0;
-    border: none;
-    border-radius: 0;
-    width: 100%;
-    padding: 10px;
-    float: left;
-    font-size: 16px;
-  }
-  .links {
-    display: flex;
-    font-style: oblique;
-    margin: 5px;
-    padding: 5px;
-    }
+#navbar ul, #btmnavbar ul {
+  display: flex;
+}
+
+#navbar ul li, #btmnavbar ul li {
+  padding: 10px;
+}
+
+main { 
+ background-color: skyblue;
+ height: 100%;
+ 
+}
+
+#planner {
+  width: 100%;
+}
+
+#planner-form {
+  display: flex;
+  justify-content: center;
+}
+
+#planner-form div {
+  padding: 10px;   
+}
+
+#planner-form div select, #planner-form div input[type="date"] {
+  height: 25px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 7px seagreen;    
+}
+
+#trips {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;   
+}
+
+.trip {
+  padding: 10px;
+  background-color: seashell;
+  width: 50%;
+  border-radius: 10px;
+  box-shadow: 0px 4px 7px seagreen;
+  margin: 10px;    
+}
+
+.hide {
+  display: none;
+}
+
