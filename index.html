@@ -1,42 +1,96 @@
 <!DOCTYPE html>
-  <html lang="en">
-    <head>
-      <title>Travel planner</title>
-      <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="main.js" defer></script>
-  </head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Planner</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/scripts/planner.js" defer></script>
+</head>
+<body>
+    <header id="header">
+        <div id="logo">
+            <h1><a href="./index.html">Travel Planner</a></h1>
+        </div>
+        <nav id="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html">Plan</a></li>
+                <li><a href="index.html">About</a></li>
+                <li><a href="index.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="planner">
+            <form id="planner-form">
+                <div>
+                    <label for="origin-countries">Origin</label>
+                    <select name="origin" id="origin-countries">
+                        <option value=""></option>
+                        <option value="USA">USA</option>
+                        <option value="Canada">Canada</option>
+                        <option value="Mexico">Mexico</option>
+                        <option value="Caribbean">Caribbean</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="destinastion-countries">Destination</label>
+                    <select name="destinastion" id="destinastion-countries">
+                        <option value=""></option>
+                        <option value="Greece">Greece</option>
+                        <option value="Turkey">Turkey</option>
+                        <option value="France">France</option>
+                        <option value="Italy">Italy</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="">Starts on</label>
+                    <input type="date" name="" id="startDate">
+                </div>
+                <div>
+                    <label for="">Ends on</label>
+                    <input type="date" id="endDate">
+                </div>
+                <div>
+                    <input type="submit" value="Create Trip">
+                </div>
+            </form>
+        </section>
+        <section id="trips">
+            <template id="trip-template">
+                <div class="trip">
+                    <h2>From <span class="origin"></span> on <span class="start-date"></span> to <span class="destination"></span> on <span class="end-date"></span>
+                    </h2>
+                    <hr>
+                    <div class="plans-container">
+                        <h3>Activities of interest</h3>
+                        <ul>
+                        </ul>
+                        <hr>
+                        <div class="add-plan">
+                            <input type="text" value="">
+                            <button type="button">Add plan</button>
+                            <button class="hide" type="button">Edit Plan</button>
+                        </div>
+                    </div>
+                </div>
+            </template>
+        </section>
+    </main>
 
-  <body>
-    <div>
-      <label>Date</label>
-      <input id= "travelDate" type= "date"/>
-    </div>
-    <div>
-      <label>Destination</label>
-      <input id= "destination" />
-    </div>
- <div class="header">
-      <h1 >Your trave destination awaits</h1>
-      <input type="text" id="myInput" placeholder="Your travel plans... ">
-	  <input type="submit" id="addItem" onclick="addNewPlans()"  value="ADD NEW PLANS"  style="background-color:aqua; color:black" />
-	    <input type="submit" onclick="editPlans()" value="EDIT PLANS" style="background-color:antiquewhite; color:turquoise"/>
-	  <input type="submit" onclick="removeAllPlans()" value="REMOVE ALL PLANS" style="background-color:aqua;  color:black" />
-    </div>
-	<div>
-	 <h3 style="color:white " >Here are your plans</h3>
-	 <ul id="myUL">
-    </ul>
-	</div>
-	<div class="links">
-            
-    <ul>
-  <li> <a href="https://populi.co/legal/terms">Terms of Service </a></li> 
- <li> <a href= https://populi.co/legal/aup>Acceptable Use Policy</a> </li>
- <li> <a href=https://dfa.populiweb.com/internal/go_to_zendesk.php?pageNav=1 >Support</a></li>
- <li> <a href=https://www.facebook.com/populico> Facebook</a></li>
-    </ul>
-</div>
-    
-  </body>
+    <footer id="footer">
+        <nav id="btmnavbar">
+            <ul>
+                <li><a href=https://populi.co/legal/terms>Terms of Service </a></li>
+                <li><a href= https://populi.co/legal/aup>Instagram</a> </li>
+                <li><a href=https://www.facebook.com/populico> Facebook</a></li>
+                <li><a href="index.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+   
+</body>
 </html>
