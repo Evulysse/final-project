@@ -28,8 +28,9 @@ function createTripElement(template, origin, destination, startDate, endDate) {
     tripElement.querySelector("h2 .end-date").textContent = endDate;
 
     tripElement.querySelector(".add-plan button").addEventListener("click", event => {
-        const input = tripElement.querySelector("input").value.trim();
-       
+        const inputEL = tripElement.querySelector("input");
+        const input = inputEL.value.trim();
+
         if(input) {
             const li = document.createElement("li");
             const span = document.createElement("span");
@@ -67,6 +68,8 @@ function createTripElement(template, origin, destination, startDate, endDate) {
             li.append(span, edit, del);
 
             tripElement.querySelector("ul").append(li);
+
+            inputEL.value = "";
         } 
        
     });
