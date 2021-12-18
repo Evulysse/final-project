@@ -7,7 +7,7 @@ With it you are able to choose from a selection of destinations and then type in
 Multiple lists can be displayed at the same time frame for different location.
 
 
- **Your app has at least three distinct "features"**
+ **Your "features"**
   
   *Uses a function to compile countries and dates
   *Uses a function to create plans

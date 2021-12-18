@@ -53,11 +53,13 @@ main {
 }
 
 #planner-form div {
-  padding: 10px;   
+  padding: 10px;  
+  
 }
 
-#planner-form div select, #planner-form div input[type="date"] {
+#planner-form div select, #planner-form div input[type="date"], #planner-form div input[type="submit"] {
   height: 25px;
+  width: 100px;
   border-radius: 10px;
   box-shadow: 0px 4px 7px seagreen;    
 }
@@ -79,5 +81,15 @@ main {
 
 .hide {
   display: none;
+}
+
+@media only screen and (max-width: 701px) {
+  #planner-form, #navbar ul, header, footer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 5px;
+      padding: 5px;
+  }
 }
 
