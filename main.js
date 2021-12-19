@@ -100,8 +100,3 @@ function planTrip(event) {
 }
 
 form.addEventListener("submit", planTrip);
-
-
-
-// let form = document.getElementsByClassName(".add-plan");
-// form.target.reset();

@@ -62,7 +62,7 @@ main {
 #planner-form div select, #planner-form div input[type="date"], #planner-form div input[type="submit"] {
   height: 25px;
   border-radius: 10px;
-  box-shadow: 0px 4px 7px seagreen;    
+  box-shadow: 0px 4px 7px coral;    
 }
 
 #trips {
